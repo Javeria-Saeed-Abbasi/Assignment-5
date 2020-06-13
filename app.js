@@ -430,6 +430,7 @@
 //     document.write( 'Total Marks: ' + totalmarks + "<br>");
 //     document.write( 'Marks Obtained : ' + totalObt + "<br>");
 //     document.write( 'Percantage : ' + totalPercent + "<br>");
+
 // if (totalPercent >= 80 +"%") {
 //     document.write( 'Grade : ' + 'A-one' + '<br>');
 //     document.write( 'Remarks : ' + 'Excellent' + '<br>');
@@ -509,19 +510,19 @@
 // var div = num1 / num2;
 // var modul = num1 % num2;
  
-// if (opr = '+') {
+// if (opr == '+') {
 //     document.write('Your '+ num1 + opr + num2 +" is equal to "+ sum + "<br>");   
 // }
-// else if (opr = '-') {
+// else if (opr == '-') {
 //     document.write('Your '+ num1 + opr + num2 +" is equal to "+ subt + "<br>");   
 //    }
-// else if (opr = '*') {
+// else if (opr == '*') {
 //     document.write('Your '+ num1 + opr + num2 +" is equal to "+ mul + "<br>");   
 //    }
-// else if (opr = '/') {
+// else if (opr == '/') {
 //     document.write('Your '+ num1 + opr + num2 +" is equal to "+ div + "<br>");   
 //    }
-// else if (opr = '%') {
+// else if (opr == '%') {
 //     document.write('Your '+ num1 + opr + num2 +" is equal to "+ modul + "<br>");   
 //    }
 // else{
@@ -582,4 +583,236 @@
 // }
 
 // ************************Task 3
+// var num = +prompt('Enter a number....');
 
+// if (num < 0){
+// document.write(num + ' is a negative number');
+// }
+// else if(num > 0){
+//     document.write(num + ' is a positive number');
+// }
+// else if(num === 0){
+//     document.write(num + ' is a neutral number');
+// }
+// else{
+//     document.write(' This is not a number');
+// }
+
+// ************************Task 4
+// var letter = prompt("Check vowel...Enter a letter...");
+
+// if(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u" ){
+//     document.write(true);
+// }
+// else{
+//     document.write(false);
+// }
+
+// ************************Task 5
+// var pswd = "correct" ;
+// var user_pswd = prompt('Enter your password');
+// if (user_pswd == "") {
+//     document.write(' "Please enter your password" ');
+// }
+// else if (pswd == user_pswd ){
+//     document.write('  “Correct! The password you entered matches the original password” ');
+// }
+// else{
+//     document.write('“Incorrect password” ');
+// }
+
+// ************************Task 6
+// var hour =13;
+// if (hour < 18){
+//     document.write("Good day");
+// }
+// else{
+//     document.write("Good evening");
+// }
+
+// ************************Task 7
+// var time = +prompt('Enter your time in 24 hours format like 1400 ');
+// if(time >= 0000 && time < 1200){
+//     document.write('Good Morning'.bold());
+// }
+// else if(time >= 1200 && time < 1700){
+//     document.write('Good Afternoon'.bold());
+// }
+// else if(time >= 1700 && time < 2100){
+//     document.write('Good Evening'.bold());
+// }
+// else if(time >= 2100 && time <= 2359){
+//     document.write('Good Night'.bold());
+// }
+// else{
+//     document.write('Enter your time in 24 hours format');
+// }
+
+// ======================================  CHAPTER # 14-16 ==============================================
+// ************************Task 1
+// var emptyArray = [];
+// emptyArray [0] = " Javeria ";
+// emptyArray [1] = " Abbasi ";
+// emptyArray [2] = " Eurtugral ";
+// emptyArray [3] = " Ahad ";
+// document.write(emptyArray);
+
+// ************************Task 2
+// var emptyArray = [];
+// emptyArray = {
+//     std1 : [" Javeria "],
+//     std2 : [" Abbasi "],
+//     std3 : [" Umer "],
+//     std4 : [" Farzeen "],
+// }
+// document.write(emptyArray.std1 ,  emptyArray.std2 , emptyArray.std3 ,  emptyArray.std4  );
+
+// ************************Task 3
+// var stringsArray = ["JAVERIA " , " Saeed " , " Abbasi"];
+// document.write(stringsArray);
+
+// ************************Task 4
+// var numberArray = [0, 1, 2, 3, 4, 5,];
+// document.write(numberArray);
+
+// ************************Task 5
+// var booleanArray = [false, true];
+// document.write(booleanArray);
+
+// ************************Task 6
+// var mixedArray = [1, "Bob", "Now is", true];
+// document.write(mixedArray);
+
+// ************************Task 7
+// var numb = ["1) " , "2) " , "3) " , "4) " , "5) " , "6) " , "7) " , "8) " ]
+// var eduArray = [" SSC ", " HSC "," BCS "," BS "," BCOM "," MS "," M.Phil. "," PhD ", ]
+// document.write("Qualifications: ".bold() + "<br>"+ "<br>");
+// document.write(numb[0] , eduArray[0] + "<br>");
+// document.write(numb[1] , eduArray[1] + "<br>");
+// document.write(numb[2] , eduArray[2] + "<br>");
+// document.write(numb[3] , eduArray[3] + "<br>");
+// document.write(numb[4] , eduArray[4] + "<br>");
+// document.write(numb[5] , eduArray[5] + "<br>");
+// document.write(numb[6] , eduArray[6] + "<br>");
+// document.write(numb[7] , eduArray[7] + "<br>");
+
+// ************************Task 8
+// var stdName = [" Michael " , " John ", " Tony ",];
+// var stdScore = [ 320 ,  230 ,  480 , ];
+// var totalPerSubj = 500 ;
+// var std1 = (stdScore[0]/totalPerSubj)*100 + "%";
+// var std2 = (stdScore[1]/totalPerSubj)*100 + "%";
+// var std3 = (stdScore[2]/totalPerSubj)*100 + "%";
+// document.write( 'Score of '+ stdName[0] + ' is '+ stdScore[0]+ ". "+ " Percantage : " + std1 + "<br>");
+// document.write( 'Score of '+ stdName[1] + ' is '+ stdScore[1]+ ". "+ " Percantage : " + std2 + "<br>");
+// document.write( 'Score of '+ stdName[2] + ' is '+ stdScore[2]+ ". "+ " Percantage : " + std3 + "<br>");
+
+// ************************Task 9
+// ==============UNSHIFT
+// var colorArray = [" Red " , " Yellow " , " Green " , " Blue " , " Purple " ,  " White "];
+// var user_color = prompt('Which color do you want to add enter it here .... ');
+// var colorAdd = colorArray.unshift(user_color);
+// document.write(colorArray + "<br>");
+
+// ==============PUSH
+// var user_color2 = prompt('Which color do you want to add enter it here .... ');
+// var colorAdd = colorArray.push(user_color2);
+// document.write(colorArray + "<br>"); 
+
+// ==============PUSH
+// var user_color3 = prompt('Enter 1st color .... ');
+// var user_color4 = prompt('Enter 2nd color .... ');
+// var colorAdd = colorArray.push(user_color3, user_color4  );
+// document.write(colorArray + "<br>"); 
+
+// ==============SHIFT
+// var colorAdd = colorArray.shift(user_color);
+// document.write(colorArray + "<br>");
+
+// ==============POP
+// var colorAdd = colorArray.pop(user_color);
+// document.write(colorArray + "<br>");
+
+// ==============SPLICE
+// var index_color = +prompt('Enter a index number on which you want to add color...');
+// var color = prompt('Enter your color add to desire index...');
+// var colorAdd = colorArray.splice(index_color, 1 , color);
+// document.write(colorArray + "<br>");
+
+// ==============SPLICE
+// var del_color = +prompt('Enter a index number on which you want to delete color...');
+// var qauntity_color = prompt('How many colors do you want to delete?...');
+// var color_remove = colorArray.splice(del_color, qauntity_color);
+// document.write(colorArray + "<br>");
+
+// ************************************Task 10
+// var std_score = [320 , 230 , 480 , 120 ,];
+// var sorted = std_score.sort();
+// document.write(sorted);
+
+// ************************************Task 11
+// var cities_names = [" Karchi "," Lahore "," Islamabad "," Quetta "," Peshawar " ];
+// document.write('Cities List'.bold().fontsize('8') + "<br>" + cities_names + "<br>");
+
+// var slice_arr = cities_names.slice( 2 , 4 );
+// document.write('Selected cities List'.bold().fontsize('8') + "<br>" + slice_arr);
+
+// ************************************Task 12
+// var arr =["This","is","my","cat"];
+// document.write('Array : '.bold().fontsize('8') + "<br>" + arr + "<br>");
+// var joined = arr.join( ' ')
+// document.write('String : '.bold().fontsize('8') + "<br>" + joined );
+
+// ************************************Task 13
+// var devices = [];
+
+// var add = devices.push("keyboard ");
+ 
+// var add = devices.push("mouse ");
+
+// var add = devices.push("printer ");
+
+// var add = devices.push("monitor ");
+
+// document.write("Devices: ".bold() +" <br>" + devices +" <br>"+" <br>"+" <br>"); 
+// document.write("Out: ".bold() +" <br>" + devices[0] +" <br>"+ "Out: ".bold() +" <br>" + devices[1] +" <br>"+ "Out: ".bold() +" <br>" + devices[2] +" <br>"+ "Out: ".bold() +" <br>" + devices[3]); 
+
+// ************************************Task 14
+// var devices = [];
+
+// var add = devices.push("keyboard ");
+ 
+// var add = devices.push("mouse ");
+
+// var add = devices.push("printer ");
+
+// var add = devices.push("monitor ");
+
+// document.write("Devices: ".bold() +" <br>" + devices +" <br>"+" <br>"+" <br>"); 
+// document.write("Out: ".bold() +" <br>" + devices.pop([0]) +" <br>"+ "Out: ".bold() +" <br>" + devices.pop([1]) +" <br>"+ "Out: ".bold() +" <br>" + devices.pop([2]) +" <br>"+ "Out: ".bold() +" <br>" + devices.pop([3])); 
+
+// ************************************Task 15
+// var company = [" Apple " , " Samsung " , " Motorola " , " Nokia " , " Sony ", " Haier "];
+// document.write('<option>' + company[0] + '</option>');
+
+
+// ======================================  CHAPTER # 17-20 ==============================================
+// ************************************Task 1
+var car = [ ];
+var newcar = [];
+
+
+
+
+var flower_shop = new Array();
+
+flower_shop['rose'] = new Array( "5.00", "7 items", "red" );
+flower_shop['daisy'] = new Array( "4.00", "3 items", "blue" );
+flower_shop['orchild'] = new Array( "2.00", "1 item", "white" );
+
+//print "rose costs 5.00, and you get 2 items."
+document.write( "rose costs " + flower_shop['rose'][0] + ", and you get " + flower_shop['rose'][1] + ".<br>");
+//print "daisy costs 4.00, and you get 3 items." 
+document.write( "daisy costs " + flower_shop['daisy'][0] + ", and you get " + flower_shop['daisy'][1] + ".<br>");
+//print "orchild costs 2.00, and you get 1 item. 
+document.write( "orchild costs " + flower_shop['orchild'][0] + ", and you get " + flower_shop['orchild'][1] + ".<br>");
