@@ -154,7 +154,7 @@
 // document.write("Total Cost to buy " +  numberOfTickets + " tickets to a movie is " + totalCost );
 
 // ************************Task 5
-// var num = 2 ;
+// var num = 4 ;
 // var count = 1;
 // document.write(num + " x " + count + " = " + num * count + "<br>");
 // document.write(num + " x " + ++count + " = " + num * count + "<br>");
@@ -166,13 +166,7 @@
 // document.write(num + " x " + ++count + " = " + num * count + "<br>");
 // document.write(num + " x " + ++count + " = " + num * count + "<br>");
 // document.write(num + " x " + ++count + " = " + num * count + "<br>");
-// Or use loop
-// var num = 4;
-// var mytable = " ";
-// for (i=1; i<=10; i++) {
-//     mytable = mytable+ i+ " x " +num+ " = " +(i*num)+ "<br/>";
-//   }
-// document.write("Table of 4 ".bold() + "<br/>" + mytable);
+
 
 // ************************Task 6
 // var celsius = 25;
@@ -793,26 +787,141 @@
 
 // ************************************Task 15
 // var company = [" Apple " , " Samsung " , " Motorola " , " Nokia " , " Sony ", " Haier "];
-// document.write('<option>' + company[0] + '</option>');
+// document.write("<select>")
+// length = company.length;
+// for(var i=0; i <length; i++){
+//     document.write("<option>" + company[i]+ "</option>");
+// }
+// document.write("</select>");
 
 
 // ======================================  CHAPTER # 17-20 ==============================================
 // ************************************Task 1
-var car = [ ];
-var newcar = [];
+// var items = [
+//     [  ],
+//     [  ],
+//     [  ]
+//   ];
+// document.write(items[0][0]);
+// document.write(items[0][1]);
+// document.write(items[1][0]);
+// document.write(items[1][1]);
+// document.write(items);
+
+// ************************************Task 2
+// var matrix = [
+//         [ 0 , 1 ],
+//         [ 2 , 3 ]
+// ];
+
+// document.write(matrix[0] [0] , [1] [0] , matrix[1] [0] , matrix[1] [1] + "<br>"+ "<br>");
+// document.write(matrix[0] [1] , [0] [0] , matrix[0] [1] , matrix[1] [0] + "<br>"+ "<br>");
+// document.write(matrix[1] [0] , [1] [0] , matrix[0] [0] , matrix[0] [1] + "<br>"+ "<br>");
 
 
+// ************************************Task 3
+// for(var i= 1; i <=10; i++ ){
+//     document.write(i + "<br>");
+// }
+
+// ************************************Task 4
+
+// var num = +prompt('Enter your number which multiplication table do you want?');
+// var mytable = +prompt('How much times do you want to multiplicate the number?');
+// table = " ";
+// for (i=1; i<=mytable; i++) {
+//      table = table+ num + " x " + i + "=" + (i*num)+ "<br/>"; 
+//   }
+// document.write("Multiplication Table of ".bold() + num  + "<br/>" +"Length " + mytable +  "<br/>" + "<br/>" + table);
+
+// ************************************Task 5
+
+// var fruits = new Array("Apple", " Banana" ," Mango", "Orange", "Stawberry");
+// var len = fruits.length;
+// for (var i = 0; i < len; i++) {
+// document.write(fruits[i]+ "<br>");
+// }
+// document.write("<br>"+ "<br>");
+// for (var i = 0; i < len; i++) {
+//     document.write("Element at index" + i +" : " + fruits[i]+ "<br>");
+//     }
+
+// ************************************Task 6
+// var i = 0;
+// document.write("Counting :".bold()+ "<br>");
+// for( i=1; i<=15; i++ ){
+//     document.write(i + ",");
+// }
+
+// document.write('<br>' + '<br>');
+// document.write("Reverse Counting :".bold()+ "<br>");
+// for (i = 10; i > 0; i--){
+//     document.write(i + ",");
+//   }     
+
+// document.write('<br>' + '<br>');
+// document.write("Even :".bold()+ "<br>");
+// for ( i = 0; i <= 20; i++){
+//     if( i % 2 === 0){
+//             document.write( i  + ", ");
+//     }   
+// }
+
+// document.write('<br>' + '<br>');
+// document.write("Odd :".bold()+ "<br>");
+// for ( i = 0; i <= 20; i++){
+//     if( i % 2 === 1){
+//             document.write( i  + ", ");
+//     }   
+// }
+
+// document.write('<br>' + '<br>');
+// document.write("Series :".bold()+ "<br>");
+// for ( i = 2; i <= 20; i++){
+//     if( i % 2 === 0){
+//             document.write( i  + "k" +", ");
+//     }   
+// }
+
+// ************************************Task 7
+// var found = prompt('Welcome to ABC Bakery! What do you want to order Sir/Ma'+'am?');
+// var  A =["cake", "apple pie", "cookie", "chips", "patties" ];
+// var length = A.length ;
+// for (var i=0; i<=length; i++){
+//     if (found == A[i]){
+//         alert(found + " is available at index " + i  + " in our bakery "   );
+//     }
+//     else{
+//         alert("We are sorry... "+ found + " is not available in our bakery ");
+//     }
+// }
+
+// ************************************Task 8
+// var A =[24,53,78,91,12];
+// var large = [91];
+// for(var i=1; i<A.length; i++) {
+//     if(large == A[i]) {
+//       document.write("The biggest number is "+ A[i]);
+//     }
+// }
+
+// ************************************Task 9
+// var A =[24,53,78,91,12];
+// var smallest = [12];
+// for(var i=1; i<A.length; i++) {
+//     if(smallest == A[i]) {
+//       document.write("The biggest number is "+ A[i]);
+//     }
+// }
+
+// ************************************Task 10
+// var num = 5;
+// table = " ";
+// for (i=1; i<=20; i++) {
+//      table = table+ (i*num)+ " , "; 
+//   }
+// document.write( table);
+
+// ======================================== 20 CHAPTERS TASKS COMPLETED ==================================================
 
 
-var flower_shop = new Array();
-
-flower_shop['rose'] = new Array( "5.00", "7 items", "red" );
-flower_shop['daisy'] = new Array( "4.00", "3 items", "blue" );
-flower_shop['orchild'] = new Array( "2.00", "1 item", "white" );
-
-//print "rose costs 5.00, and you get 2 items."
-document.write( "rose costs " + flower_shop['rose'][0] + ", and you get " + flower_shop['rose'][1] + ".<br>");
-//print "daisy costs 4.00, and you get 3 items." 
-document.write( "daisy costs " + flower_shop['daisy'][0] + ", and you get " + flower_shop['daisy'][1] + ".<br>");
-//print "orchild costs 2.00, and you get 1 item. 
-document.write( "orchild costs " + flower_shop['orchild'][0] + ", and you get " + flower_shop['orchild'][1] + ".<br>");
